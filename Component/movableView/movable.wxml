@@ -1,0 +1,9 @@
+<movable-area class='movableWrap'>
+
+    <movable-view scale='{{scale}}' class='movableView' direction='{{direction}}'>
+
+        <slot></slot>
+
+    </movable-view>
+
+</movable-area>

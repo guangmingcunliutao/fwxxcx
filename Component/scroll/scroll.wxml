@@ -1,0 +1,16 @@
+<view class='navtop-wrap'>
+    <scroll-view class='scroll1' scroll-x>
+        <view class='scroll-x-wrap'>
+            <view class='scroll-x-item'>1</view>
+            <view class='scroll-x-item'>2</view>
+            <view class='scroll-x-item'>3</view>
+        </view>
+    </scroll-view>
+    <scroll-view class='scroll2' scroll-y>
+        <view class='scroll-y-wrap'>
+            <view class='scroll-y-item'>1</view>
+            <view class='scroll-y-item'>2</view>
+            <view class='scroll-y-item'>3</view>
+        </view>
+    </scroll-view>
+</view>

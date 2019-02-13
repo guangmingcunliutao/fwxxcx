@@ -1,0 +1,63 @@
+<!--pages/active/active.wxml-->
+<view class='container'>
+
+    <cover-view class='coverView'>这是一个cover-view</cover-view>
+    <cover-image binderror='notload' bindload='onload' class='coverImg' src='https://via.placeholder.com/320x30/#87ceeb/808080%20?Text=Digital.com'></cover-image>
+
+    <!-- 提供的图标，type为类型，size为字体大小，color为颜色 -->
+    <view>
+        <icon size='30px' color='lightblue' type='success'></icon>
+        <icon size='32px' type='success_no_circle'></icon>
+        <icon size='34px' type='info'></icon>
+        <icon size='36px' type='warn'></icon>
+        <icon size='38px' type='waiting'></icon>
+        <icon size='40px' type='cancel'></icon>
+        <icon size='42px' type='download'></icon>
+        <icon size='44px' type='search'></icon>
+        <icon size='46px' type='clear'></icon>
+    </view>
+
+    <view>
+        <text>文本标签selectable：文本是否可选，space：显示连续空格，decode：是否解码
+            <text> 组件内只支持 嵌套</text>
+        </text>
+    </view>
+
+
+    <view>
+        <rich-text nodes="{{nodes}}" bindtap="tap"></rich-text>
+    </view>
+
+    <view>
+        <progress percent='{{percent}}' show-info='true'></progress>
+    </view>
+    <view>
+    <!-- 需要在bindgetuserinfo回调中获取用户信息 -->
+        <button size='mini' type='warn' form-type='submit' open-type='getUserInfo' bindgetuserinfo='getUserInfo'>获取用户信息</button>
+        <button size='mini' type='warn' open-type='openSetting' >打开授权设置页</button>
+        <button size='mini' type='warn' open-type='contact' >打开客服回话</button>
+        <button size='mini' type='warn' open-type='getPhoneNumber' bindgetphonenumber='getPhoneNumber' >获取手机号码</button>
+    </view>
+
+    <!-- 循环 -->
+    <view wx:for="{{list}}" wx:for-item='key' wx:key="{{index}}" wx:for-index='num'>
+        {{key}}-----{{num}}
+    </view>
+    <block wx:for="{{3}}" wx:for-item='key' wx:key="{{index}}"  wx:for-index='num'>
+        <text>{{key}}-----{{num}}</text>
+    </block>
+    <block>
+        <view hidden='{{false}}'>display隐藏</view>
+    </block>
+    <!-- 条件渲染 -->
+    <block>
+        <view wx:if='{{true}}'>if隐藏</view>
+    </block>
+
+<!-- 内部模板 -->
+    <template name='test'>
+        <view>模板</view>
+        <view>接受模板传值：{{sss}}</view>
+    </template>
+    <template is='test' data="{{sss: 'hahah'}}"></template>
+</view>

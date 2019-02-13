@@ -1,0 +1,10 @@
+<!--Component/swiper/swiper.js.wxml-->
+<swiper class='swiper-wrap' indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='2000' circular='{{circular}}' previous-margin='50px' next-margin='50px' indicator-active-color='white'>
+
+    <swiper-item class='item'><view class='img'>1</view></swiper-item>
+    <swiper-item class='item'><view class='img'>2</view></swiper-item>
+    <swiper-item class='item'><view class='img'>3</view></swiper-item>
+
+    <button bindtap="indicatorDotsChange">indicator-dots</button>
+
+</swiper>

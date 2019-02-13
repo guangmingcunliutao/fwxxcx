@@ -1,0 +1,8 @@
+<!--Component/list/list.wxml-->
+<text>{{msg}}</text>
+<view>这是一个列表</view>
+<view class='list'>
+    <slot name='left'></slot>
+    <slot name='center'></slot>
+    <slot name='right'></slot>
+</view>

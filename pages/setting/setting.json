@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "设置",
+    "usingComponents": {
+        "list": "../../Component/list/list",
+        "item": "../../Component/item/item"
+    }
+}

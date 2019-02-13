@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "羞羞改改",
+    "usingComponents": {
+        "nav-top": "../../Component/scroll/scroll",
+        "selfswiper": "../../Component/swiper/swiper",
+        "movableView": "../../Component/movableView/movable"
+    }
+}

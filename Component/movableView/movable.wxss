@@ -1,0 +1,10 @@
+.movableWrap{
+    width: 100%;
+    height: 200px;
+}
+.movableView{
+    width: 50px;
+    height: 50px;
+    background: lightblue;
+    font-size: 12px;
+}

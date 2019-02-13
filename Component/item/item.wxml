@@ -1,0 +1,4 @@
+<!--Component/item/item.wxml-->
+<view class="item {{isActive?'active':''}}" bindtap='tapItem'>
+    <text>这是要一个item</text>
+</view>

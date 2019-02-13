@@ -1,0 +1,4 @@
+<!--pages/moviedetail/moviedetail.wxml-->
+<button class="btn {{ collection ? 'success' : '' }}" bindtap='handleCollection'>
+    <text>{{ collection ? '已收藏' : '点击收藏' }}</text>
+</button>

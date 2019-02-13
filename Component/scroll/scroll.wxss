@@ -1,0 +1,29 @@
+.navtop-wrap {
+    width: 100%;
+}
+.scroll-x-wrap{
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+.scroll-x-item{
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: inline-table;
+    color: white;
+}
+
+.scroll2{
+    margin-top: 20px;
+}
+.scroll-y-wrap{
+    width: 100%;
+    height: 80px;
+}
+.scroll-y-item{
+    width: 100%;
+    height: 80px;
+    background: black;
+    color: white;
+}

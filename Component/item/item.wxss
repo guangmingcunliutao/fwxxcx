@@ -1,0 +1,9 @@
+/* Component/item/item.wxss */
+.item{
+    border: 1px solid #ccc;
+    padding: 10rpx;
+    margin: 10rpx 0;
+}
+.active{
+    background: lightskyblue;
+}

@@ -1,0 +1,28 @@
+<!--pages/setting/setting.wxml-->
+<view class='container'>
+    <form>
+        <input disabled='disabled' class='inpText' value='{{value}}' type='idcard' bindinput='inputAction' placeholder='请输入内容' placeholder-class='placeholder'></input>
+        <button class='btn' bindtap='getValue' data-value='{{value}}'>获取inputvalue</button>
+    </form>
+    <view class='box' bindtouchstart='touchstart'>啊啊啊</view>
+    <view class='component'>
+        <list>
+            <item slot='left'></item>
+            <item slot='center'></item>
+            <item slot='right'></item>
+        </list>
+    </view>
+    <view>
+        <block wx:for='{{dataList}}' wx:key='{{item.id}}' wx:for-item='key' wx:for-index='num' >
+            <view class='item-wrap' bindtap='goDetail' data-itemDetail='{{key}}'>
+                <view class='img-wrap'>
+                    <image src='{{key.img}}'></image>
+                </view>
+                <view class='item-content'>
+                    <view>{{key.nm}}</view>
+                    <text wx:if='{{key.collection}}' style='color: red;'>❤</text>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

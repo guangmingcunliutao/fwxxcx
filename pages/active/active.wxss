@@ -1,0 +1,4 @@
+/* pages/active/active.wxss */
+.coverImg{
+    height: 30px;
+}

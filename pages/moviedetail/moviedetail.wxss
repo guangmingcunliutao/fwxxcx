@@ -1,0 +1,9 @@
+/* pages/moviedetail/moviedetail.wxss */
+.btn{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.success{
+    background: red;
+}
